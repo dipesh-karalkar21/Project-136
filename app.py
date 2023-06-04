@@ -15,7 +15,7 @@ def index():
 
 def GetStar():
     name = request.args.get("name")
-    pl = next(item for item in data if item["name"] == name)
+    pl = next(item for item in data if item["Name"] == name)
     return jsonify({
         "data" : star ,
         "message" : "Success",
